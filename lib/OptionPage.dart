@@ -26,7 +26,7 @@ class OptionPage extends StatelessWidget {
                 ),
                 onPressed: () {
                   print('Time Pressed');
-                  Navigator.of(context).pushNamed('/home');
+                  Navigator.of(context).pushNamed('/timepage');
                 },
               ),
               Padding(
@@ -39,9 +39,34 @@ class OptionPage extends StatelessWidget {
                 ),
                 onPressed: () {
                   print('Speed Pressed');
-                   Navigator.of(context).pushNamed('/home');
+                  Navigator.of(context).pushNamed('/home');
                 },
-              )
+              ),
+              // ListView(
+              //   children: <Widget>[
+              //     ListTile(
+              //       leading: Icon(Icons.access_alarm),
+              //       title: Text('Hello'),
+              //       subtitle: Text('World'),
+              //       trailing: Icon(Icons.forward),
+              //       onTap: (){},
+              //     ),
+              //      ListTile(
+              //       leading: Icon(Icons.access_alarm),
+              //       title: Text('Hello'),
+              //       subtitle: Text('World'),
+              //       trailing: Icon(Icons.forward),
+              //       onTap: (){}
+              //     ),
+              //      ListTile(
+              //       leading: Icon(Icons.access_alarm),
+              //       title: Text('Hello'),
+              //       subtitle: Text('World'),
+              //       trailing: Icon(Icons.forward),
+              //       onTap: (){}
+              //     )
+              //   ],
+              // )
             ],
           ),
         ),

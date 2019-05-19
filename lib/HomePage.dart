@@ -12,7 +12,6 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 3), () {
-      
       Navigator.of(context).pushNamed("/newpage");
     });
   }
@@ -41,10 +40,8 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-          
             Center(
                 child: Stack(alignment: AlignmentDirectional.center, children: [
-
               Image.asset(
                 'images/Group 1.png',
                 height: 300.0,
@@ -53,9 +50,15 @@ class _HomePageState extends State<HomePage> {
                 'images/speedometer-1.png',
                 height: 100.0,
               ),
-              
             ])),
-  CircularProgressIndicator(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                CircularProgressIndicator(
+                  backgroundColor: Colors.redAccent,
+                ),
+              ],
+            )
           ],
         ),
       ),
